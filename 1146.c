@@ -1,20 +1,22 @@
 #include <stdio.h>
- 
-int main() {
- 
-    int tempoI, tempoF, duracao;
 
-    scanf ("%d %d", &tempoI, &tempoF);
+int main()
+{
 
-    if (tempoF > tempoI) {
-        duracao = tempoF - tempoI;
+    int X, i;
+
+    scanf("%d", &X);
+
+    while (X != 0)
+    {
+        for (i = 1; i < X; i++)
+        {
+            printf("%d ", i);
+        }
+        printf("%d\n", X);
+
+        scanf("%d", &X);
     }
 
-    else {
-        duracao = (tempoF - tempoI) + 24;
-    }
-
-    printf("O JOGO DUROU %d HORA(S)\n", duracao);
- 
     return 0;
 }
